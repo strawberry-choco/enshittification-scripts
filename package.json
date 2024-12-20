@@ -1,0 +1,37 @@
+{
+    "name": "datacore",
+    "private": true,
+    "files": [
+        "dist/**"
+    ],
+    "workspaces": [
+        "packages/*",
+        "apps/*",
+        "tools/*"
+    ],
+    "scripts": {
+        "build": "vite build",
+        "lint": "eslint .",
+        "test": "vitest run",
+        "postinstall": "husky"
+    },
+    "lint-staged": {
+        "*": "prettier --write --ignore-unknown"
+    },
+    "devDependencies": {
+        "@cloudflight/eslint-plugin-node": "1.0.0",
+        "@cloudflight/eslint-plugin-typescript": "1.0.0",
+        "@eslint/compat": "1.2.4",
+        "eslint": "9.16.0",
+        "husky": "9.1.7",
+        "prettier": "3.4.0",
+        "typescript": "5.7.2",
+        "vite": "5.4.11",
+        "vite-plugin-checker": "0.8.0"
+    },
+    "packageManager": "yarn@4.5.1",
+    "volta": {
+        "node": "20.14.0",
+        "yarn": "4.2.2"
+    }
+}

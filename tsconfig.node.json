@@ -1,0 +1,11 @@
+{
+    "extends": "./tsconfig.base.json",
+    "include": ["vite.config.mts", "eslint.config.mjs"],
+    "compilerOptions": {
+        "lib": ["es2023"],
+        "moduleResolution": "node16",
+        "composite": true,
+        "module": "ESNext",
+        "types": ["node"]
+    }
+}
